@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title>Bengal Tourism</title>
+    <meta name="description" content="">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Bootstrap CSS -->
+    <link href="includes/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="includes/css/styles.css" rel="stylesheet">
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+    <!-- Using google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- Div for Navbar and header -->
+    <div class="navbar navbar-default navbar-fixed-top" id="header">
+        <!-- Div for container to align the header contents in same as content of webpage -->
+        <div class="container" id="containerheader">
+            <div class="navbar-header" id="navbarheader">
+                <!-- For button when you move to smaller scale -->
+                <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Used for Logo -->
+                <div id="logoimage">
+                    <a class="navbar-brand logo" href="#"><img id="logoimage" src="images/logo.jpg"></a>
+                    
+                </div>
+            </div>
+            <!-- Div for contents in Navigation bar in header -->
+            <div class="navbar-collapse collapse navbar-responsive-collapse header">
+                <!-- <h1 class="navbar-left visible-lg " id="title">West Bengal Tourism</h1> -->
+                <!-- The components used in header section -->
+                <div id="component">
+                    <!-- For the My Account tab in header -->
+                    <div class="navbar-left">
+                        <h2>Sunderban National Park</h2>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>My Account<strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>Settings</a></li>
+                                
+                                <li class="dropdown-header"><a href="#"><span class="glyphicon glyphicon-off"></span> Sign out </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- For Home,Places,Contact tab in header -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Places<strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Tour&Packages</a></li>
+                                <li><a href="">Hotel&Resorts</a></li>
+                                
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Form tab for the search within the site -->
+                    <form class="navbar-form navbar-right">
+                        <input type="text" class="form-control" placeholder="Search here.." name="search" id="searchinput">
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Div tag for the Carousel slides -->
+    <div class="carousel slide" id="MyCarousel">
+        <!-- List of slide indicators -->
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#MyCarousel"></li>
+            <li data-slide-to="1" data-target="#MyCarousel"></li>
+            <li data-slide-to="2" data-target="#MyCarousel"></li>
+        </ol>
+        <!-- Div tag for the contents of the Carousel for including the contents in slides -->
+        <div class="carousel-inner">
+            <!-- First slide -->
+            <div class="item active" id="slide1">
+                <img src="images/carousel1_large.jpg" alt="Sunderban large image">
+                <div class="carousel-caption ">
+                    <h4>Sunderban</h4>
+                    <p>Sunderbans national park is located at the South Eastern tip of the 24 Paraganas district in the state of West Bengal. It got its name from one of the mangrove plants known as Sundari (Heritiera Minor).</p>
+                </div>
+            </div>
+            <!-- Second slide -->
+            <div class="item" id="slide2">
+                <img src="images/carousel2_large.jpg" alt="Royal Bengal Tiger">
+                <div class="carousel-caption ">
+                    <h4>Royal Bengal Tiger</h4>
+                    <p>The Bengal tiger, also called the royal Bengal tiger, is the most numerous tiger subspecies. It is the national animal of both India and Bangladesh</p>
+                </div>
+            </div>
+            <!-- Third slide -->
+            <div class="item" id="slide3">
+                <img src="images/carousel3_large.jpg" alt="Sunderban-A UNESCO World Heritage">
+                <div class="carousel-caption ">
+                    <h4></h4>
+                    <p>The Sundarbans ('Forest of Sundari trees') are one of the largest remaining areas of mangroves in the world. It also has exceptional biodiversity,</p>
+                </div>
+            </div>
+        </div>
+        <!-- Below two links are used as navigator for previous and next in the Carousel -->
+        <a href="#MyCarousel" class="left carousel-control" data-slide="prev"><span class="icon-prev"></span></a>
+        <a href="#MyCarousel" class="right carousel-control" data-slide="next"><span class="icon-next"></span></a>
+    </div>
+    <!-- Main container for whole the content -->
+    <div class="container" id="main">
+        <!-- Div tag for containing three column data -->
+        <div class="row" id="threeColumns">
+            <!-- First column -->
+            <div class="col-sm-4 feature">
+                <!-- For the firt panel -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">About Sunderban</h3>
+                    </div>
+                    <p>The Sundarban National Parkis a National Park,Tiger Reserve,and a Biosphere Reserve in West Bengal,India.It is part of the Sundarban on the Ganges Delta, and adjacent to the Sundarban Reserve Forest in Bangladesh. The delta is densely covered by mangrove forests,and is one of the largest reserves for the Bengal tiger.It is also home to a variety of bird,reptile and invertebrate species, including the salt-water crocodile.The present Sundarban National Park was declared as the core area of Sundarban Tiger Reserve in 1973 and a wildlife sanctuary in 1977.</p>
+                    <a href="#" target="_blank" class="btn btn-warning btn-block">Click here for more..</a>
+                </div>
+            </div>
+            <!-- Second column -->
+            <div class="col-sm-4 feature">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Royal Bengal Tiger</h3>
+                    </div>
+                    <p>The Bengal tiger, also called the royal Bengal tiger (Panthera tigris tigris), is the most numerous tiger subspecies. It is the national animal of both India and Bangladesh.[2] By 2011, the total population was estimated at fewer than 2,500 individuals with a decreasing trend. None of the Tiger Conservation Landscapes within the Bengal tiger's range is considered large enough to support an effective population size of 250 adult individuals. Since 2010, it has been classified as endangered by the IUCN</p>
+                    <a href="#" target="_blank" class="btn btn-danger btn-block">Click here for more..</a>
+                </div>
+            </div>
+            <!-- Third column -->
+            <div class="col-sm-4 feature">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Sunderban Map</h3>
+                    </div>
+                    <div id="sunderbanmap"></div>
+                    <a href="#" target="_blank" class="btn btn-info btn-block">Want to see big map? Click here..</a>
+                </div>
+            </div>
+        </div>
+        <!-- Div tag for creating two sections -->
+        <div class="row" id="twoSections">
+            <!-- First column -->
+            <div class="col-sm-6">
+                <!-- Div for act as tab able content -->
+                <div class="tabbable">
+                    <!-- For listing the tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Video</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Map</a></li>
+                    </ul>
+                    <!-- Tab content -->
+                    <div class="tab-content">
+                        <!-- the content for the first tab -->
+                        <div class="tab-pane active" id="tab1">
+                            <h4>West Bengal Tourism promotion video&nbsp<span class="glyphicon glyphicon-facetime-video"></span></h4>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/d6IHmtMoB_g" frameborder="0" allowfullscreen></iframe>
+                            <p>Please watch the promotional video for West Bengal tourism and take a moment to give feedback about us by clicking on the below button..</p>
+                            <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal">Feedback&nbsp<span class="glyphicon glyphicon-comment"></span></a>
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button class="close" data-dismiss="modal">&times;</button>
+                                            <h3 class="modal-title">Feedback&nbsp<span class="glyphicon glyphicon-comment"></span></h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Hello !!
+                                                <br>Please provide feedback for us, it will be great to know how we are doing ! and what we need to improve.. </p>
+                                            <form class="horizontal-form">
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label" for="email">Email ID</label>
+                                                    <input type="text" id="email">
+                                                    <br>
+                                                    <label for="comments">Feedback comments </label>
+                                                    <textarea class="form-control" rows="5" id="comments"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-primary" role="button" data-dismiss="modal">Cancel</button>
+                                            <button class="btn btn-primary" role="button">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Content of the secnd tab -->
+                        <div class="tab-pane" id="tab2">
+                            <h4>Sunderban, India&nbsp<small class="glyphicon glyphicon-map-marker">Find below location of Sunderban using google Map</small></h4>
+                            <iframe src="<iframe src="https://www.google.com/maps/d/embed?mid=1-HxIV7rqWqTGFrZXE1GAXLbT1JI&hl=en_US" width="640" height="480"></iframe>" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second section or column -->
+            <div class="col-sm-6">
+                <!-- Showing as a list group -->
+                <div class="list-group" id="secondSection">
+                    <!-- first list item  -->
+                    <span class="list-group-item">
+                            <h3 class="list-group-item-heading"><u>Flora&Fauna</u></h3>
+                            <p class="list-group-item-text">Sunderbans mostly comprises of mangrove forests.Mangroves are salt-tolerant plants occurring in the tropical and sub-tropical intertidal estuarine regions, sheltered coastline and tidal creeks.</p>
+                            <a href="#" target="_blank" class="btn btn-danger btn-block">Click here for more..</a>
+                        </span>
+                    <!-- Second list item -->
+                    <span class="list-group-item">
+                            <h3 class="list-group-item-heading"><u>Sunderban Tour Packages</u></h3>
+                            <p class="list-group-item-text">
+                            </p>
+                            <a href="#" target="_blank" class="btn btn-danger btn-block">Click here for more..</a>
+                        </span>
+                    <!-- Third list item -->
+                    <span class="list-group-item">
+                            <h3 class="list-group-item-heading"><u>Sunderban Hotels & resorts</u></h3>
+                            <p class="list-group-item-text"></p>
+                            <a href="#" target="_blank" class="btn btn-danger btn-block">Click here for more..</a>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <!-- For a intro section as full width row -->
+        <div class="row" id="WBTourismDetails">
+            <div class="col-12">
+                <!-- Content of introduction with header and description and a more info -->
+                <div class="well ">
+                    <div class="page-header">
+                        <h2>West Bengal Tourism<small>&nbsp A brief introduction..</small></h2>
+                    </div>
+                    <p class="lead">This is the official website of West bengal Tourism, one of the most popular travel websites in India. </p>
+                    <a href="#" class="btn btn-large btn-primary hidden-sm">Click here for more info..</a>
+                    <a href="#" class="btn btn-large btn-success visible-sm">Click for more &nbsp<span class="glyphicon glyphicon-eye-open"></span></a>
+                    <br>
+                    <!-- Will enable alert box when click on the below link button -->
+                    <a href="#" class="btn btn-small btn-primary" id="alertMe"><span class="glyphicon glyphicon-thumbs-up">Like us</span></a>
+                </div>
+                <!-- Will show alert box when click on the button -->
+                <div class="alert alert-success alert-block fade in" id="successAlert">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <h3>You Liked !</h3>
+                    <p>Thank you for Liking Bengal Tourism !!.. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer of the page -->
+    <footer>
+        <!-- Div for container in footer -->
+        <div class="container text-center">
+            <div class="row">
+                <!-- First column in footer -->
+                <div class="col-sm-4">
+                    <h5>Copyright &copy; 2016 (Bengal Tourism Department)</h5>
+                </div>
+                <!-- Second column in footer -->
+                <div class="col-sm-4">
+                    <ul class="noStyle">
+                        <li><a href="#">More info <span class="glyphicon glyphicon-info-sign"></span></a></li>
+                        <li><a href="#">Contact us<span class="glyphicon glyphicon-earphone"></span></a></li>
+                        <li><a href="#">Write to us<span class="glyphicon glyphicon-edit"></span></a></li>
+                        <li><a href="#">Chat with us between 9 AM-6 AM IST<span class="glyphicon glyphicon-comment"></span></a></li>
+                    </ul>
+                </div>
+                <!-- Third column in footer -->
+                <div class="col-sm-2 text-center">
+                    <h5 id="plantrip">Plan your Travel</h5>
+                    <ul class="noStyle">
+                        <li><a href="#">Book for Road Trip</a></li>
+                        <li><a href="#">Indian Railway</a></li>
+                        <li><a href="#">Book a flight</a></li>
+                    </ul>
+                </div>
+                <!-- Fourth column in footer -->
+                <div class="col-sm-2">
+                    <h5 id="right">Follow us on</h5>
+                    <br>
+                    <ul class="noStyle">
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Google plus</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- First try for the online version of jQuery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>
+    window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="includes/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="includes/js/script.js"></script>
+</body>
+
+</html>

@@ -244,16 +244,7 @@ h3 {
 }
 
 
-/*@media (min-width: 992px) {
-   #logoimage {
-        background: url('../../images/ktourism.jpg') top center no-repeat;
-        padding-top: 0px;
-        max-height: 82px;
-    }
-}*/
-
-
-/* Landscape phone to portrait tablet */
+/* phone to portrait tablet */
 
 @media (max-width: 768px) {
     #MyCarousel.item {

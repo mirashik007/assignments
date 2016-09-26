@@ -1,0 +1,5 @@
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.num1 = 0;
+    $scope.num2 = 0;
+});

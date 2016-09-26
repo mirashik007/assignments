@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Angular JS</title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="angularjs.js"></script>
+</head>
+<body bgcolor="antiquewhite">
+
+<div ng-app="myApp" ng-controller="myCtrl" align="center">
+	<h1>My Calculator</h1>
+
+	<p>Number 1: <input type="number" placeholder="Enter 1st number" ng-model="num1"></p>
+	<p>{{num1}}</p>
+
+	<p>Number 2: <input type="number" placeholder="Enter 2nd number" ng-model="num2"></p>
+	<p>{{num2}}</p>
+		
+	
+<div>
+  <h2>Select an Operation:</h2>
+  <select ng-model="myVar">
+  	<option value="" select disabled>select</option>
+    <option value="addition">ADDITION</option> 
+    <option value="subtraction">SUBTRACTION</option> 
+    <option value="multiplication">MULTIPLICATION</option> 
+    <option value="division">DIVISION</option> 
+
+  </select>
+</form>
+
+<div ng-switch="myVar">
+  <div ng-switch-when="addition">
+     <h2>RESULT: {{ add() }}</h2>
+  </div>
+  <div ng-switch-when="subtraction">
+     <h2>RESULT: {{ sub() }}</h2>
+  </div>
+  <div ng-switch-when="multiplication">
+     <h2>RESULT: {{ mul() }}</h2>
+  </div>
+  <div ng-switch-when="division">
+     <h2>RESULT: {{ div() }}</h2>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

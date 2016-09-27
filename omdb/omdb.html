@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Movie Search</title>
+    <meta charset="utf-8">
+
+    <link href="includes/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+
+</head>
+<body>
+<div class="row">
+    <div ng-controller="myctrl" id="SearchForm">
+        <div class="container-fluid">
+            <h2 align="center" id="first">MOVIE SEARCH</h2>
+
+        </div>
+        <div class="container">
+            <h3 align="center"><label>Enter the movie name :</label></h3>
+            <input  ng-model="movieTitle"  class="form-control seperator" placeholder="enter the movie name to search" id="movieTitle">
+            <button ng-model="searchMovie"  class="btn btn-success btn-block" id="search" ng-click="titleget()">Search</button>
+
+        </div>
+
+        <div class="col-12 container border table-responsive">
+            <h3 align="center">RESULTS</h3>
+            <table class="table table-bordered" id="allMovieList">
+                    <tr>
+                        <th>TITLE</th>
+                        <th>TYPE</th>
+                        <th>YEAR</th>    
+                        <th>IMDBID</th>    
+                        <th>POSTER</th>    
+                    </tr>
+
+                    <tr ng-repeat="x in details">
+                        <td id="firstRow">{{x.Title}}</td>
+                        <td id="firstRow">{{x.Type}}</td>
+                        <td id="firstRow">{{x.Year}}</td>
+                        <td id="firstRow">{{x.imdbID}}</td>
+                        <td id="poster"><img ng-src="{{x.Poster}}" class=img-responsive /></td>
+                        
+                    </tr>
+                
+            </table>
+        </div>
+        <!-- <div class="container" ng-model="errormsg">
+            
+        </div> -->
+
+
+    </div>
+	</div>
+
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+    <!---script files -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+     <script src="search.js"></script>
+    <script src="getResponse.js"></script>
+   
+    <script src="promises.js"></script>
+    <!-- <script type="text/javascript" src="Js/controller.js"></script> -->
+
+</body>
+</html>

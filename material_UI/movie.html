@@ -1,0 +1,44 @@
+<div ng-controller="myctrl">
+        
+  <md-content class="md-padding" layout-xs="column" layout="row">
+    <div layout="row" layout-wrap layout-align="center">
+     <md-card flex="30" flex-xs="90" flex-sm="90" dir-paginate="x in details|itemsPerPage:itemsPerPage" total-items="total_count">
+
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline" align="center"><strong>{{x.Title}}</strong></span>
+            <img ng-src="{{ x.Poster }}" class="md-card-image" alt="Washed Out" flex-xs="90" flex-sm="90">
+          </md-card-title-text>
+        </md-card-title>
+
+          <md-card-content>
+           <br>
+           <span class="md-Title">Type : </span>
+            <span class="md-subhead"><strong>{{x.Type}}</strong></span>
+            <br>
+            <span class="md-Title">Year : </span>
+            <span class="md-subhead"><strong>{{x.Year}}</strong></span>
+            <br>
+            <span class="md-Title">ID :</span>
+            <span class="md-subhead"><strong>{{x.imdbID}}</strong></span>
+            <br>
+          </md-card-content>
+
+        <md-card-actions layout="row" layout-align="end center">
+          <a href="#/view/{{x.imdbID}}"><md-button class="md-raised md-accent">Read More</md-button></a>
+         
+       </md-card-actions>
+ 
+      </md-card>
+    </div>
+ </md-content>
+
+<dir-pagination-controls
+   max-size="10"
+   direction-links="true"
+   boundary-links="true" 
+   on-page-change="getData(newPageNumber)"
+   layout-align="center center" >
+ </dir-pagination-controls>
+
+</div>

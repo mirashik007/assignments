@@ -1,0 +1,68 @@
+<div ng-controller="viewController">
+<md-content class="md-padding" layout-xs="column" layout="row">
+    <div layout="row" layout-wrap layout-align="center">
+    <md-card flex="70">
+	
+	
+		 <md-card-title-media>
+           <img ng-src="{{details.Poster}}" class="md-card-image" alt="Washed Out" flex-xs="50" flex-sm="50" /></img>	
+          </md-card-title-media>
+		
+		<md-card-title>
+          <md-card-title-text>
+	
+			<span class="md-headline"><strong>TITLE : </strong>{{details.Title}}</span>
+            
+            <p>  <span class="md-Title"><strong>Type : </strong></span>
+            <span class="md-headline">{{details.Type}}</span></p>
+
+            <p><span class="md-Title"><strong>Year : </strong></span>
+            <span class="md-headline">{{details.Year}}</span>
+            </p>
+            <p>
+            <span class="md-Title"><strong>ID :</strong></span>
+            <span class="md-headline">{{details.imdbID}}</span>
+            </p>
+            <p>
+            <span class="md-Title"><strong>Rated :</strong></span>
+            <span class="md-headline">{{details.Rated}}</span>
+            </p>
+            <p>
+             <span class="md-Title"><strong>Released :</strong></span>
+            <span class="md-headline">{{details.Released}}</span>
+             </p>
+             <p>
+             <span class="md-Title"><strong>Genre :</strong></span>
+            <span class="md-headline">{{details.Genre}}</span>
+            </p>
+            <p>
+             <span class="md-Title"><strong>Director :</strong></span>
+            <span class="md-headline">{{details.Director}}</span>
+            </p>
+             <p>
+             <span class="md-Title"><strong>Actor :</strong></span>
+            <span class="md-headline">{{details.Actor}}</span>
+            </p>
+            <p>
+             <span class="md-Title"><strong>Awards :</strong></span>
+            <span class="md-headline">{{details.Awards}}</span>
+            </p>
+            <p>
+             <span class="md-Title"><strong>imdbRating :</strong></span>
+            <span class="md-headline">{{details.imdbRating}}</span>
+            </p>
+            <br>
+            <p><span class="md-headline"><strong>{{details.Plot}}</strong></span><p>
+            <br>
+            </md-card-title-text>
+            </md-card-title>
+            <md-button class="md-raised md-warn" href="#/" class="warning">
+            Back To Homepage</md-button>
+
+            </md-card>
+            
+			</div>
+			</div>
+			
+			
+

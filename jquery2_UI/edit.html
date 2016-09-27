@@ -1,0 +1,76 @@
+<div ng-controller="addctrl" layout="column" layout-padding ng-cloak>
+
+  <md-content class="md-no-momentum">
+
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+   <!-- <form flex="60"> -->
+   <form name="projectForm" required flex="60">
+
+    <md-input-container class="md-icon-float md-block" flex="50">
+      <!-- Use floating label instead of placeholder -->
+      <md-icon md-svg-src="img/icons/ic_person_24px.svg" class="name"></md-icon>
+      <!-- <input ng-model="name" type="text" placeholder="Enter Your Name" required/> -->
+      <input md-maxlength="30" type="text" required md-no-asterisk name="name" type="text" ng-model="name"  placeholder="Enter Your Name">
+        <div ng-messages="projectForm.name.$error">
+          <div ng-message="required">This is required.</div>
+          <div ng-message="md-maxlength">The description must be less than 30 characters long.</div>
+        </div>
+    </md-input-container>
+
+ <md-input-container>
+          <label>Gender</label>
+          <md-select name="type" ng-model="gender" required>
+           <md-option value="">Select</md-option>
+            <md-option value="Male">Male</md-option>
+            <md-option value="Female">Female</md-option>
+          </md-select>
+        </md-input-container>
+    <!-- <md-input-container md-no-float class="md-block" flex="50"> -->
+      <!-- <label>Gender</label> -->
+
+    <!-- <md-radio-group ng-model="gender" required>
+
+      <p><md-radio-button value="male"> Male </md-radio-button>
+      <md-radio-button value="female"> Female </md-radio-button></p>
+      
+    </md-radio-group> -->
+
+    <!-- </md-input-container> -->
+
+    <md-input-container md-no-float class="md-block" flex="50">
+      <md-icon md-svg-src="img/icons/ic_age_24px.svg"></md-icon>
+      <input ng-model="age" type="number" placeholder="Age"/>
+    </md-input-container>
+
+ <md-input-container md-no-float class="md-block" flex="50">
+      <md-icon md-svg-src="img/icons/ic_age_24px.svg"></md-icon>
+      <input ng-model="company" type="text" placeholder="company" required/>
+    </md-input-container>
+
+    <md-input-container class="md-block" flex="50">
+      <!-- Use floating placeholder instead of label -->
+      <md-icon md-svg-src="img/icons/ic_email_24px.svg"></md-icon>
+      <input ng-model="email" type="email" name="email" placeholder="E-Mail" required minlength="10" maxlength="30" ng-pattern="/^.+@.+\..+$/"/>
+
+      <div ng-messages="projectForm.email.$error" role="alert">
+          <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+            Email must be between 10 and 100 characters long and look like an e-mail address.
+          </div>
+        </div>
+    </md-input-container>
+
+<md-input-container md-no-float class="md-block" flex="50">
+      <md-icon md-svg-src="img/icons/ic_phone_24px.svg"></md-icon>
+      <input ng-model="phone" type="number" placeholder="Phone Number" >
+    </md-input-container>
+
+
+
+    
+        <a href="#/save"><md-button ng-disabled="projectForm.$invalid" class="md-raised md-warn" type="save" ng-click="save()">SAVE</md-button></a>
+
+        </form>
+        </section>
+  </md-content>
+  
+</div>

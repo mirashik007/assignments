@@ -1,0 +1,65 @@
+<div ng-controller="myctrl">
+
+    <md-toolbar class="md-table-toolbar md-default">
+ <div class="md-toolbar-tools">
+   <span>RECORDS</span>
+ </div>
+</md-toolbar>
+             <md-table-container>
+  <table md-table md-row-select multiple ng-model="selected" md-progress="promise">
+    <thead md-head md-order="query.details" md-on-reorder="getData">
+      <tr md-row>
+        <th md-column>EMP ID </th>
+        <th md-column>NAME</th>
+        <th md-column>GENDER</th>
+        <th md-column>AGE</th>
+        <th md-column>COMPANY</th>
+        <th md-column>E-Mail ID</th>
+        <th md-column>CONTACT</th>
+        <th md-column>EDIT </
+        th>
+        <th md-column>DELETE</th>
+      </tr>
+    </thead>
+    <tbody md-body>
+      <tr md-row md-select="details" md-select-id="name" dir-paginate="x in details|itemsPerPage:itemsPerPage" total-items="total_count">
+        <td md-cell>{{x.id}}</td>
+        <td md-cell>{{x.name}}</td>
+        <td md-cell>{{x.gender}}</td>
+        <td md-cell>{{x.age}}</td>
+        <td md-cell>{{x.company}}</td>
+        <td md-cell>{{x.email}}</td>
+        <td md-cell>{{x.phone}}</td>
+        <td md-cell><md-button class="md-raised md-warn" href="#/edit/{{x.id}}">
+            EDIT</md-button>
+        </td>
+         <td md-cell>
+         <div class="dialog-demo-content" layout="row" layout-wrap layout-margin layout-align="center">
+        <!-- <a href="#/delete/{{x.id}}">  -->
+        <md-button class="md-raised md-warn" ng-click="delData($event,x.id)"  ><
+            DELETE</md-button>
+            <!-- </a> -->
+            </div>
+         </td> 
+      </tr>
+    </tbody>
+  </table>
+<div ng-if="status">
+    <b layout="row" layout-align="center center" class="md-padding">
+      {{status}}
+    </b>
+  </div>
+  <dir-pagination-controls
+                   max-size="8"
+                   direction-links="true"
+                   boundary-links="true" 
+                   on-page-change="getData(newPageNumber)" >
+                </dir-pagination-controls>
+</md-table-container>
+
+
+<!-- <md-table-pagination md-limit="query.limit"  md-page="query.page" md-total="{{total_count}}" md-on-paginate="getData"  md-page-select></md-table-pagination> -->
+			</div>
+		
+			
+

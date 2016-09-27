@@ -1,0 +1,79 @@
+<div ng-controller="addctrl" layout="column" layout-padding ng-cloak>
+
+  <md-content class="md-no-momentum">
+
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+   
+   <form name="projectForm" required flex="60">
+
+    <md-input-container class="md-icon-float md-block" flex="50">
+      
+      <input md-maxlength="30" type="text" required md-no-asterisk name="name" type="text" ng-model="name"  placeholder="Enter Your Name">
+        <div ng-messages="projectForm.name.$error">
+          <div ng-message="required">This is required.</div>
+          <div ng-message="md-maxlength">The description must be less than 30 characters long.</div>
+        </div>
+    </md-input-container>
+
+ <md-input-container flex="50">
+          <label>Gender</label>
+          <md-select name="type" ng-model="gender" required>
+           <md-option value="">Select</md-option>
+            <md-option value="Male">Male</md-option>
+            <md-option value="Female">Female</md-option>
+          </md-select>
+        </md-input-container>
+    <!-- <md-input-container md-no-float class="md-block" flex="50"> -->
+      <!-- <label>Gender</label> -->
+
+    <!-- <md-radio-group ng-model="gender" required>
+
+      <p><md-radio-button value="male"> Male </md-radio-button>
+      <md-radio-button value="female"> Female </md-radio-button></p>
+      
+    </md-radio-group> -->
+
+    <!-- </md-input-container> -->
+
+    <md-input-container md-no-float class="md-block" flex="50">
+      <input ng-model="age" type="number" placeholder="Age"/>
+    </md-input-container>
+
+ <md-input-container md-no-float class="md-block" flex="50">
+      
+      <input ng-model="company" type="text" placeholder="company" required/>
+    </md-input-container>
+
+    <md-input-container class="md-block" flex="50">
+      <!-- Use floating placeholder instead of label -->
+      
+      <input ng-model="email" type="email" name="email" placeholder="E-Mail" required minlength="10" maxlength="30" ng-pattern="/^.+@.+\..+$/"/>
+
+      <div ng-messages="projectForm.email.$error" role="alert">
+          <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+            Email must be between 10 and 100 characters long and look like an e-mail address.
+          </div>
+        </div>
+    </md-input-container>
+
+<md-input-container md-no-float class="md-block" flex="50">
+      
+      <input ng-model="phone" type="number" placeholder="Phone Number" >
+    </md-input-container>
+
+       <div class="dialog-demo-content" layout="row" layout-wrap layout-margin layout-align="center">
+        <a href="#/submit"><md-button ng-disabled="projectForm.$invalid" class="md-raised md-primary" type="submit" ng-click="db($event)">SAVE</md-button></a>
+       
+        </div>
+
+        </form>
+        </section>
+
+        <div ng-if="status">
+    <b layout="row" layout-align="center center" class="md-padding">
+      {{status}}
+    </b>
+  </div>
+  </md-content>
+  
+</div>

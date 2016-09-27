@@ -1,0 +1,50 @@
+<div ng-controller="searchctrl">
+
+    <md-toolbar class="md-table-toolbar md-default">
+ <div class="md-toolbar-tools">
+   <span>RECORDS</span>
+ </div>
+</md-toolbar>
+             <md-table-container>
+  <table md-table md-row-select multiple ng-model="selected" md-progress="promise">
+    <thead md-head md-order="query.details" md-on-reorder="getData">
+      <tr md-row>
+        <th md-column>EMP ID </th>
+        <th md-column>NAME</th>
+        <th md-column>GENDER</th>
+        <th md-column>AGE</th>
+        <th md-column>COMPANY</th>
+        <th md-column>E-Mail ID</th>
+        <th md-column>CONTACT</th>
+        <th md-column>EDIT </
+        th>
+        <th md-column>DELETE</th>
+      </tr>
+    </thead>
+    <tbody md-body>
+      <tr md-row md-select="details" md-select-id="name" md-auto-select ng-repeat="x in details">
+        <td md-cell>{{x.id}}</td>
+        <td md-cell>{{x.name}}</td>
+        <td md-cell>{{x.gender}}</td>
+        <td md-cell>{{x.age}}</td>
+        <td md-cell>{{x.company}}</td>
+        <td md-cell>{{x.email}}</td>
+        <td md-cell>{{x.phone}}</td>
+        <td md-cell><md-button class="md-raised md-warn" href="#/add">
+            EDIT</md-button>
+        </td>
+         <td md-cell>
+         <md-button class="md-raised md-warn" href="#/delete">
+            DELETE</md-button>
+         </td> 
+      </tr>
+    </tbody>
+  </table>
+</md-table-container>
+
+
+<md-table-pagination md-limit="query.limit"  md-page="query.page" md-total="{{total_count}}" md-on-paginate="getData"  md-page-select></md-table-pagination>
+			</div>
+		
+			
+

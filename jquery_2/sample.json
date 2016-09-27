@@ -1,0 +1,193 @@
+{
+  "employee": [
+    {
+      "name": "James Farrebn",
+      "gender": "male",
+      "age": 23,
+      "company": "wipru",
+      "email": "jamesfarrell@nurali.com",
+      "phone": "+91 (981) 498-2979",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Katy Lowe",
+      "gender": "female",
+      "age": 37,
+      "company": "ROTODYNE",
+      "email": "katylowe@rotodyne.com",
+      "phone": "+91 (835) 597-3290"
+    },
+    {
+      "id": 3,
+      "name": "Reynolds Delacruz",
+      "gender": "male",
+      "age": 36,
+      "company": "STREZZO",
+      "email": "reynoldsdelacruz@strezzo.com",
+      "phone": "+91 (973) 506-3734"
+    },
+    {
+      "id": 4,
+      "name": "Meghan Hart",
+      "gender": "female",
+      "age": 38,
+      "company": "EARTHMARK",
+      "email": "meghanhart@earthmark.com",
+      "phone": "+91 (818) 566-2372"
+    },
+    {
+      "id": 5,
+      "name": "Abby Lawson",
+      "gender": "female",
+      "age": 36,
+      "company": "EQUITOX",
+      "email": "abbylawson@equitox.com",
+      "phone": "+91 (906) 471-3915"
+    },
+    {
+      "id": 6,
+      "name": "Alison Tran",
+      "gender": "female",
+      "age": 29,
+      "company": "AMTAS",
+      "email": "alisontran@amtas.com",
+      "phone": "+91 (852) 400-2458"
+    },
+    {
+      "id": 7,
+      "name": "Becker Ayers",
+      "gender": "male",
+      "age": 39,
+      "company": "MOMENTIA",
+      "email": "beckerayers@momentia.com",
+      "phone": "+91 (814) 548-2317"
+    },
+    {
+      "id": 8,
+      "name": "Maldonado Wiggins",
+      "gender": "male",
+      "age": 26,
+      "company": "IMKAN",
+      "email": "maldonadowiggins@imkan.com",
+      "phone": "+91 (976) 526-3271"
+    },
+    {
+      "id": 9,
+      "name": "Julie Barker",
+      "gender": "female",
+      "age": 27,
+      "company": "ISOSTREAM",
+      "email": "juliebarker@isostream.com",
+      "phone": "+91 (816) 574-2716"
+    },
+    {
+      "id": 10,
+      "name": "Hansen Farley",
+      "gender": "male",
+      "age": 28,
+      "company": "SHEPARD",
+      "email": "hansenfarley@shepard.com",
+      "phone": "+91 (976) 518-2281"
+    },
+    {
+      "id": 11,
+      "name": "Hope Maldonado",
+      "gender": "female",
+      "age": 27,
+      "company": "POOCHIES",
+      "email": "hopemaldonado@poochies.com",
+      "phone": "+91 (909) 561-3945"
+    },
+    {
+      "id": 12,
+      "name": "Blackwell Wooten",
+      "gender": "male",
+      "age": 26,
+      "company": "TUBESYS",
+      "email": "blackwellwooten@tubesys.com",
+      "phone": "+91 (805) 457-2531"
+    },
+    {
+      "id": 13,
+      "name": "Wolfe Ingram",
+      "gender": "male",
+      "age": 38,
+      "company": "ZILLATIDE",
+      "email": "wolfeingram@zillatide.com",
+      "phone": "+91 (886) 488-3093"
+    },
+    {
+      "id": 14,
+      "name": "Caroline Peck",
+      "gender": "female",
+      "age": 21,
+      "company": "FUTURIS",
+      "email": "carolinepeck@futuris.com",
+      "phone": "+91 (929) 481-2059"
+    },
+    {
+      "id": 15,
+      "name": "Trevino Sloan",
+      "gender": "male",
+      "age": 38,
+      "company": "ACCUPHARM",
+      "email": "trevinosloan@accupharm.com",
+      "phone": "+91 (839) 401-2905"
+    },
+    {
+      "id": 16,
+      "name": "Dale Clements",
+      "gender": "male",
+      "age": 20,
+      "company": "PYRAMI",
+      "email": "daleclements@pyrami.com",
+      "phone": "+91 (810) 553-3089"
+    },
+    {
+      "id": 17,
+      "name": "Lupe Caldwell",
+      "gender": "female",
+      "age": 30,
+      "company": "OBLIQ",
+      "email": "lupecaldwell@obliq.com",
+      "phone": "+91 (855) 594-3406"
+    },
+    {
+      "id": 18,
+      "name": "Patricia Burgess",
+      "gender": "female",
+      "age": 27,
+      "company": "RODEMCO",
+      "email": "patriciaburgess@rodemco.com",
+      "phone": "+91 (848) 466-2075"
+    },
+    {
+      "id": 19,
+      "name": "Angie Frederick",
+      "gender": "female",
+      "age": 38,
+      "company": "INTERODEO",
+      "email": "angiefrederick@interodeo.com",
+      "phone": "+91 (922) 555-2708"
+    },
+    {
+      "name": "Sanchez Power",
+      "gender": "male",
+      "age": 23,
+      "company": "wipro",
+      "email": "mirashik007@gmail.com",
+      "phone": 8653031669,
+      "id": 21
+    },
+    {
+      "name": "Mir Ashik",
+      "gender": "male",
+      "age": 12,
+      "company": "GEEKUS",
+      "email": "mirashik007@gmail.com",
+      "phone": 8653031669,
+      "id": 22
+    }
+  ]
+}

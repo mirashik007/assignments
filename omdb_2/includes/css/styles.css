@@ -1,0 +1,163 @@
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+footer {
+    background: #F0F8FF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    color: #191970;
+    text-align: center;
+    font-size: 12px;
+}
+th{
+    width: 480px;
+}
+body {
+
+    background-color: antiquewhite;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+img{
+    padding: 2px 2px 5px 2px; 
+}
+td,th{
+    border: 2px solid;
+    padding: 10px;
+    text-align: center;
+}
+
+#firstRow{
+    width= 280px;
+}
+#header {
+    background: #F0F8FF;
+}
+/*Table*/
+#wholeTable{
+    border-collapse: collapse;
+    width: 100%;
+}
+/*Search input box*/
+#movieTitle{
+    width: 300px;
+    height: 60px;
+    border: 2px solid;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration-style: solid;
+}
+/*Button search*/
+#search{
+    width: 100px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+#allMovieList{
+    margin : 10px 10px 10px 10px;
+}
+#SearchForm{
+    margin-top: 180px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#logoimage{
+    padding : 0px;
+}
+.logo{
+    padding: 0px;
+}
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+#searchinput {
+    width: 200px;
+}
+
+.header {
+    padding-top: -95px;
+}
+#heading{
+    font-family: 'Lobster', cursive;
+    color: #8A25AA;
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 230px;
+    text-align: center;
+}
+h1 {
+    font-family: 'Lobster', cursive;
+    color: #008000;
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-top: 27px;
+    margin-left: 200px;
+    text-align: center;
+}
+
+#component {
+    padding-top: 32px;
+    margin-bottom: 0px;
+}
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+
+/* Portrait & landscape phone */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #logoimage {
+        padding: 0px;
+        height: 132px;
+    }
+    #navbarheader {
+        height: 132px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logoimage {
+        height: 80px;
+        padding : 0px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    #logoimage {
+        padding : 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    #logoimage {
+        width: 150px;
+        height: 50px;
+        padding : 0px;
+    }  
+}
+
+
+@media (min-width: 992px) {
+   #logoimage {
+        padding : 0px;
+        max-height: 82px;
+    }
+}
+
+/* Large desktop */
+
+@media (min-width: 1200px) {
+    #logoimage {
+        height: 80px;
+        padding: 0px;
+    }
+}
